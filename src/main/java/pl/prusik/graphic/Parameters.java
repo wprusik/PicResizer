@@ -54,7 +54,7 @@ class Parameters {
     @SuppressWarnings("unchecked")
     private <T extends Number> T readNumberParameter(Class<T> type, String label) {
         System.out.print("\n" + label + ": ");
-        String value = sc.next().trim();
+        String value = sc.nextLine().trim();
         if (isNumber(value)) {
             if (type.equals(Double.class)) {
                 return (T) Double.valueOf(value);
