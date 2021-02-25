@@ -25,7 +25,7 @@ class Parameters {
 
     private void readImagesDirectory() {
         System.out.print("\nDirectory with images to resize: ");
-        imagesDirectory = new File(sc.next().trim());
+        imagesDirectory = new File(sc.nextLine().trim());
         if (!imagesDirectory.exists() || !imagesDirectory.isDirectory()) {
             AnsiColour.RED.print("Given directory does not exist!");
             readImagesDirectory();
